@@ -53,8 +53,6 @@ func getMailsByLabel(wg *sync.WaitGroup, label string) int {
 		fmt.Printf("Processing %v messages...\n", len(r.Messages))
 		for _, m := range r.Messages {
 			msg, err := service.Users.Messages.Get("me", m.Id).Do(&MessageOption{})
-			fmt.Println(msg)
-			msg, err = service.Users.Messages.Get("me", m.ThreadId).Do(&MessageOption{})
 			if err != nil {
 				fmt.Printf("Unable to retrieve message %v: %v\n", m.Id, err)
 			}
