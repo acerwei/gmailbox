@@ -12,8 +12,9 @@ Steup & Build
 Usage:
     run ./Gmail -h for details
     (The program will ask you for authentication from your gmail account. Just follow the instrucions.)
-    1. retrieve gmails: ./Gmail -o=retrieve.
-    2. decode a gmail: ./Gmail -o=decode 
+    Common Usages: 
+    1. retrieve gmails: ./Gmail -o=retrieve -startDate=YYYY/MM/DD -endDate=YYYY/MM/DD
+    2. decode a gmail: ./Gmail -o=decode -file=$FILENAME
 
 Todos:
     1. Customize email account and password.
