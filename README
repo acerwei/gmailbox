@@ -1,0 +1,4 @@
+references: 
+    https://github.com/google/google-api-go-client/blob/master/examples/
+    https://developers.google.com/gmail/api/quickstart/go?hl=zh-CN
+    https://github.com/vitrun/html2text/blob/master/html2text.go
