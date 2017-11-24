@@ -1,4 +1,17 @@
-references: 
+Steup & Build
+    1. setup Golang environment
+    2. clone this repository
+    3. ask acer.king.wei@gmail.com for auth file (client_secret.json).
+    4. Build: go build Gmail.go
+Usage:
+    run ./Gmail -h for details
+    1. retrieve gmails: ./Gmail -o=retrieve.
+    2. decode a gmail: ./Gmail -o=decode 
+
+Todos:
+    1. Better Encoding Algorithm
+
+References: 
     https://github.com/google/google-api-go-client/blob/master/examples/
     https://developers.google.com/gmail/api/quickstart/go?hl=zh-CN
     https://github.com/vitrun/html2text/blob/master/html2text.go

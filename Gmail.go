@@ -1,9 +1,9 @@
 package main
 
 import (
-	"acerwei/encoder"
-	"acerwei/gmailbox"
-	"acerwei/util"
+	"acerwei/gmailbox/encoder"
+	"acerwei/gmailbox/gmailbox"
+	"acerwei/gmailbox/util"
 	"encoding/base64"
 	"encoding/json"
 	"flag"
