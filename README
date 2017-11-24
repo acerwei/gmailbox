@@ -1,9 +1,14 @@
 Steup & Build
-    1. setup Golang environment
-    2. clone this repository
-    3. ask acer.king.wei@gmail.com for auth file (client_secret.json).
-    4. use go get to install dependecies. 
-    5. Build: go build Gmail.go
+    1. Setup Golang environment
+    2. In your src fold: 
+        mkdir acerwei
+        cd acerwei
+        git clone https://github.com/acerwei/gmailbox
+    3. Use go get to install dependecies. 
+    4. Build: 
+        cd gmailbox
+        go build Gmail.go
+    5. Ask acer.king.wei@gmail.com for auth file (client_secret.json) and put it in the same folder as the executable (Gmail)
 Usage:
     run ./Gmail -h for details
     (The program will ask you for authentication from your gmail account. Just follow the instrucions.)
