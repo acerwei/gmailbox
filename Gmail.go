@@ -11,7 +11,6 @@ import (
 	"io/ioutil"
 	"os"
 	"sync"
-	"time"
 
 	gmail "google.golang.org/api/gmail/v1"
 )
@@ -25,28 +24,6 @@ var (
 	service      *gmail.Service
 	myEncoder    encoder.Encoder
 )
-
-type message struct {
-	size    int64
-	gmailID string
-	date    string // retrieved from message header
-	snippet string
-}
-
-//mailbox time, not local time
-func getMailBoxDate(msg *gmail.Message) string {
-	for _, h := range msg.Payload.Headers {
-		if h.Name == "Date" {
-			return h.Value
-		}
-	}
-	return ""
-}
-
-func getLocalDate(msg *gmail.Message) string {
-	date := time.Unix(msg.InternalDate/1000, 0)
-	return date.Format("2006-01-02T15:04:05")
-}
 
 //MessageOption MessageOption
 type MessageOption struct {
