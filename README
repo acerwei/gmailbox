@@ -5,11 +5,13 @@ Steup & Build
     4. Build: go build Gmail.go
 Usage:
     run ./Gmail -h for details
+    (The program will ask you for authentication from your gmail account. Just follow the instrucions.)
     1. retrieve gmails: ./Gmail -o=retrieve.
     2. decode a gmail: ./Gmail -o=decode 
 
 Todos:
-    1. Better Encoding Algorithm
+    1. Customize email account and password.
+    2. Better Encoding Algorithm
 
 References: 
     https://github.com/google/google-api-go-client/blob/master/examples/
