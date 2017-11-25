@@ -18,9 +18,11 @@ Usage:
 
 Todos:
     1. Customize email account and password.
-    2. Better Encoding Algorithm
+    2. Better encryption algorithm (currently have simple and blowfish, both are symetric ciphers)
 
 References: 
     https://github.com/google/google-api-go-client/blob/master/examples/
     https://developers.google.com/gmail/api/quickstart/go?hl=zh-CN
     https://github.com/vitrun/html2text/blob/master/html2text.go
+    https://github.com/ipfans/golang-sample/blob/master/blowfish.go
+    https://github.com/golang/crypto/blob/master/blowfish/cipher.go
